@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <main>
+        <section class="score-cards">
+            <h1 class="game-header">ROCK<br> PAPER <br>SCISSORS</h1>
+            <div id="score-box">
+                <div class="scorer-name">COMPUTER SCORE<span class="computer-score">0</span></div>
+                <div class="scorer-name">YOUR<br> SCORE<span class="your-score">0</span></div>
+            </div>
+        </section>
+        <section class="winning-template">
+            <div class="selection-button">
+                <div class="rock" onclick="chooseRock()"><img src="./assets/rock.png" alt="rock-logo" class="game-tool-logo"></div>
+                <div class="scissor" onclick="chooseScissor()"><img src="./assets/scissor.png" alt="scissor-logo" class="game-tool-logo"></div>
+            </div>
+            <img src="./assets/Line 1.png" alt="line1" class="line1">
+            <img src="./assets/Line 2.png" alt="line2" class="line2">
+            <img src="./assets/Line 3.png" alt="line3" class="line3">
+            <div class="paper" onclick="choosePaper()"><img src="./assets/paper.png" alt="paper-logo" class="game-tool-logo"></div>
+        </section>
+    </main>
+    <div class="rule-next-button">
+        <button id="open-rule-button" onclick="showRules()">RULES</button>
+        <button class="next-button" onclick="proceedToCelebration()">NEXT</button>
+    </div>
+    <div id="game-rule">
+        <h1 class="rule-header">Game Rules</h1>
+        <ul class="rule-list">
+            <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+            <li>Agree ahead of time whether you'll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</li>
+            <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
+            <li>If both players lay down the same hand, each player lays down another hand</li>
+        </ul>
+        <button id="close-rule-button" onclick="hideRules()"><img src="./assets/X.png" alt="close-rule-logo" class="close-rule-logo"></button>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

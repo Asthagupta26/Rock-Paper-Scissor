@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>you-win</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <main>
+        <img src="./assets/winning.jpg" alt="winning-celebration-logo" class="winning-img">
+        <h1 class="winning-title1">HURRAY!!</h1>
+        <h5 class="winning-title2">YOU WON THE GAME</h5>
+        <button class="play-again" onclick="startNewGame()">PLAY AGAIN</button>
+    </main>
+    <div class="rule-next-button">
+        <button id="open-rule-button" onclick="showRules()">RULES</button>
+    </div>
+    <div id="game-rule">
+        <h1 class="rule-header">Game Rules</h1>
+        <ul class="rule-list">
+            <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+            <li>Agree ahead of time whether you'll count off “rock, paper, scissors, shoot” or just “rock, paper,
+                scissors.”</li>
+            <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
+            <li>If both players lay down the same hand, each player lays down another hand</li>
+        </ul>
+        <button id="close-rule-button" onclick="hideRules()"><img src="./assets/X.png" alt="close-rule-logo"
+                class="close-rule-logo"></button>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
